@@ -14,14 +14,6 @@ GIT_DIR=${PROVISION_DIR}/git
 LOG_DIR=${PROVISION_DIR}/log
 
 #
-# input user
-#
-echo "Input your name : "
-read USER_NAME
-echo "Input your email : "
-read USER_EMAIL
-
-#
 # mkdir
 #
 mkdir -p $COMPLETED_DIR
@@ -74,5 +66,10 @@ if [ $? -eq 0 ]; then
     [ $status -eq $STATUS_ERROR ] && exit 15
   done
 fi
+
+#
+# after process message
+#
+afterMsg
 
 echo -e "\nProvisioning Finish!"
