@@ -10,4 +10,5 @@ sudo wget $TARBALL_URL -O "${TARBALL_DIR}/${TARBALL_FILE}"
 #
 # SimLink
 #
+sudo tar xvf "${TARBALL_DIR}/${TARBALL_FILE}" -C "${TARBALL_DIR}/"
 sudo ln -s "${TARBALL_DIR}/${TARBALL_FILE_NAME}/bin/node" /usr/local/bin/
