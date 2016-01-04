@@ -3,6 +3,8 @@ echo 'Start Provisioning...'
 #
 # define dir constant
 #
+RPM_DIR=/usr/src/redhat/RPMS
+
 ROOT_DIR=/vagrant
 
 PROVISION_DIR=${ROOT_DIR}/provision
@@ -16,6 +18,8 @@ LOG_DIR=${PROVISION_DIR}/log
 #
 # mkdir
 #
+sudo mkdir -p $RPM_DIR
+
 mkdir -p $COMPLETED_DIR
 mkdir -p $GIT_DIR
 mkdir -p $LOG_DIR
