@@ -24,22 +24,21 @@ sudo make install
 #
 # setting
 #
-cp -a ${GIT_DIR}/document/vim/.vimrc ~/.vimrc
+sudo cp ${GIT_DIR}/vim/.vimrc /root/.vimrc
 
-mkdir -p ~/.vim/colors
-wget "http://www.vim.org/scripts/download_script.php?src_id=6657" -O ~/.vim/colors/wombat.vim
-wget "https://raw.githubusercontent.com/w0ng/vim-hybrid/master/colors/hybrid-light.vim" -O ~/.vim/colors/hybrid-light.vim
-wget "https://raw.githubusercontent.com/w0ng/vim-hybrid/master/colors/hybrid.vim" -O ~/.vim/colors/hybrid.vim
+sudo mkdir -p /root/.vim/colors
+sudo wget "http://www.vim.org/scripts/download_script.php?src_id=6657" -O /root/.vim/colors/wombat.vim
+sudo wget "https://raw.githubusercontent.com/w0ng/vim-hybrid/master/colors/hybrid.vim" -O /root/.vim/colors/hybrid.vim
 
 #
 # neocomplete
 #
-mkdir -p ~/.vim/bundle
-git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
-vim +":NeoBundleInstall" +:q
+sudo mkdir -p /root/.vim/bundle/neobundle
+sudo git clone https://github.com/Shougo/neobundle.vim /root/.vim/bundle/neobundle.vim
+sudo /usr/local/bin/vim +":NeoBundleInstall!" +:q! ; echo;
 
 #
 # root
 #
-sudo cp -r ~/.vim /root/
-sudo cp ~/.vimrc /root/
+sudo cp -r /root/.vim ${HOME_DIR}/
+sudo cp /root/.vimrc ${HOME_DIR}/

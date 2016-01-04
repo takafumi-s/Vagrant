@@ -5,6 +5,7 @@ echo 'Start Provisioning...'
 #
 RPM_DIR=/usr/src/redhat/RPMS
 TARBALL_DIR=/usr/src/tarball
+HOME_DIR=/home/vagrant
 
 ROOT_DIR=/vagrant
 

@@ -6,9 +6,9 @@ sudo yum install -y tmux
 #
 # .tmux.conf
 #
-cp ${GIT_DIR}/document/tmux/.tmux.conf ~/
+sudo cp ${GIT_DIR}/tmux/.tmux.conf /root/
 
 #
 # root
 #
-sudo cp ~/.tmux.conf /root/
+sudo cp /root/.tmux.conf ${HOME_DIR}/
