@@ -24,12 +24,12 @@ sudo make install
 #
 # setting
 #
-cp -a ${GITDIR}/document/vim/.vimrc ~/.vimrc
+cp -a ${GIT_DIR}/document/vim/.vimrc ~/.vimrc
 
 mkdir -p ~/.vim/colors
 wget "http://www.vim.org/scripts/download_script.php?src_id=6657" -O ~/.vim/colors/wombat.vim
-wget "https://raw.githubusercontent.com/w0ng/vim-hybrid/master/colors/hybrid-light.vim" -O hybrid-light.vim
-wget "https://raw.githubusercontent.com/w0ng/vim-hybrid/master/colors/hybrid.vim" -O hybrid.vim
+wget "https://raw.githubusercontent.com/w0ng/vim-hybrid/master/colors/hybrid-light.vim" -O ~/.vim/colors/hybrid-light.vim
+wget "https://raw.githubusercontent.com/w0ng/vim-hybrid/master/colors/hybrid.vim" -O ~/.vim/colors/hybrid.vim
 
 #
 # neocomplete
@@ -41,5 +41,5 @@ vim +":NeoBundleInstall" +:q
 #
 # root
 #
-sudo cp ~/.vim   /root/
+sudo cp -r ~/.vim /root/
 sudo cp ~/.vimrc /root/
