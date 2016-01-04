@@ -4,6 +4,7 @@ echo 'Start Provisioning...'
 # define dir constant
 #
 RPM_DIR=/usr/src/redhat/RPMS
+TARBALL_DIR=/usr/src/tarball
 
 ROOT_DIR=/vagrant
 
@@ -19,6 +20,7 @@ LOG_DIR=${PROVISION_DIR}/log
 # mkdir
 #
 sudo mkdir -p $RPM_DIR
+sudo mkdir -p $TARBALL_DIR
 
 mkdir -p $COMPLETED_DIR
 mkdir -p $GIT_DIR
