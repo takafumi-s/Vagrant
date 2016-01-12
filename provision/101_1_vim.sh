@@ -37,14 +37,3 @@ sudo mkdir -p /root/.vim/bundle/neobundle
 sudo git clone https://github.com/Shougo/neobundle.vim /root/.vim/bundle/neobundle.vim
 sudo /usr/local/bin/vim -i NONE -c "try | NeoBundleUpdate! | finally | q! | endtry" -e; echo
 # sudo /usr/local/bin/vim +":NeoBundleInstall!" +:q! ; echo;
-
-###
-### exモードコマンドを打つと、それ以後のコマンドが実行されない。
-### とりあえず対策不明なので、以下は手で打つ。
-###
-
-#
-# root
-#
-sudo cp -r /root/.vim ${HOME_DIR}/
-sudo cp /root/.vimrc ${HOME_DIR}/
