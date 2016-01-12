@@ -27,7 +27,7 @@ sudo make install
 sudo cp ${GIT_DIR}/vim/.vimrc /root/.vimrc
 
 sudo mkdir -p /root/.vim/colors
-sudo wget "http://www.vim.org/scripts/download_script.php?src_id=6657" -O /root/.vim/colors/wombat.vim
+sudo wget "https://raw.githubusercontent.com/vim-scripts/Wombat/master/colors/wombat.vim" -O /root/.vim/colors/wombat.vim
 sudo wget "https://raw.githubusercontent.com/w0ng/vim-hybrid/master/colors/hybrid.vim" -O /root/.vim/colors/hybrid.vim
 
 #
