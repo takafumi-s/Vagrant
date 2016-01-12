@@ -32,16 +32,6 @@ mkdir -p $GIT_DIR
 mkdir -p $LOG_DIR
 
 #
-# include userinfo
-#
-. ${ROOT_DIR}/userinfo
-isUserInfo
-if [ $? -ne 0 ]; then
-  echo `UserInfo is default. Edit "/vagrant/userinfo".`
-  exit 15
-fi
-
-#
 # include constant
 #
 for file in `ls -1 ${CONST_DIR}/*.sh`; do
@@ -59,6 +49,16 @@ done
 # trap error
 #
 trap "echo Error" 15
+
+#
+# include userinfo
+#
+. ${ROOT_DIR}/userinfo
+isUserInfo
+if [ $? -ne 0 ]; then
+  echo `UserInfo is default. Edit "/vagrant/userinfo".`
+  exit 15
+fi
 
 #
 # check exist error log
