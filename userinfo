@@ -1,0 +1,4 @@
+#!/bin/bash
+# git config
+GIT_USER='USER'
+GIT_EMAIL='EMAIL'

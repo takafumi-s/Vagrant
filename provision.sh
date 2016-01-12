@@ -3,6 +3,10 @@ echo 'Start Provisioning...'
 #
 # define dir constant
 #
+
+DEFAULT_USER=USER
+DEFAULT_EMAIL=EMAIL
+
 RPM_DIR=/usr/src/redhat/RPMS
 TARBALL_DIR=/usr/src/tarball
 HOME_DIR=/home/vagrant
@@ -26,6 +30,16 @@ sudo mkdir -p $TARBALL_DIR
 mkdir -p $COMPLETED_DIR
 mkdir -p $GIT_DIR
 mkdir -p $LOG_DIR
+
+#
+# include userinfo
+#
+. ${ROOT_DIR}/userinfo
+isUserInfo
+if [ $? -ne 0 ]; then
+  echo `UserInfo is default. Edit "/vagrant/userinfo".`
+  exit 15
+fi
 
 #
 # include constant
