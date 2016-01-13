@@ -15,4 +15,4 @@ rpm -ivh "${RPM_DIR}/${RPM_FILE}"
 #
 # devel
 #
-yum instal -y java-1.8.0-openjdk-devel
+yum install -y java-1.8.0-openjdk-devel
