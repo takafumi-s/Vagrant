@@ -8,3 +8,6 @@
 #
 cp -r /root/.vim ${HOME_DIR}/
 cp /root/.vimrc ${HOME_DIR}/
+
+chmod vagrant:vagrant ${HOME_DIR}/.vimrc
+chmod vagrant:vagrant -R ${HOME_DIR}/.vim
