@@ -6,5 +6,5 @@
 #
 # root
 #
-sudo cp -r /root/.vim ${HOME_DIR}/
-sudo cp /root/.vimrc ${HOME_DIR}/
+cp -r /root/.vim ${HOME_DIR}/
+cp /root/.vimrc ${HOME_DIR}/

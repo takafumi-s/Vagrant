@@ -1,7 +1,7 @@
 #
 # install
 #
-sudo yum install -y git git-daemon git-all
+yum install -y git git-daemon git-all
 
 #
 # config
