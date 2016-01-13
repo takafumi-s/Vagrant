@@ -12,3 +12,7 @@ wget $RPM_URL -O "${RPM_DIR}/${RPM_FILE}"
 #
 rpm -ivh "${RPM_DIR}/${RPM_FILE}"
 
+#
+# devel
+#
+yum instal -y java-1.8.0-openjdk-devel
