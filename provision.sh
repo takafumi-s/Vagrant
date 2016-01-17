@@ -56,7 +56,16 @@ trap "echo Error" 15
 . ${ROOT_DIR}/userinfo
 isUserInfo
 if [ $? -ne 0 ]; then
-  echo `UserInfo is default. Edit "/vagrant/userinfo".`
+  echo 'UserInfo is default. Edit "/vagrant/userinfo".'
+  exit 15
+fi
+
+#
+# set ssh
+#
+setSsh
+if [ $? -ne 0 ]; then
+  echo 'ssh error. Check /vagrant/.ssh'
   exit 15
 fi
 
