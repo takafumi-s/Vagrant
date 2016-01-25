@@ -8,6 +8,7 @@ yum install -y lsof
 yum install -y mlocate
 yum install -y zip
 yum install -y unzip
+yum install -y tree
 
 yum install -y mailx
 
