@@ -24,20 +24,8 @@ make install
 #
 # setting
 #
+mkdir -p /root/.vim/{colors,ftdetect,indent,plugin,syntax,git}
 cp ${GIT_DIR}/vim/.vimrc /root/.vimrc
-
-mkdir -p /root/.vim/colors
-wget "https://raw.githubusercontent.com/vim-scripts/Wombat/master/colors/wombat.vim" -O /root/.vim/colors/wombat.vim
-wget "https://raw.githubusercontent.com/w0ng/vim-hybrid/master/colors/hybrid.vim" -O /root/.vim/colors/hybrid.vim
-
-#
-# scala syntax
-#
-cd /tmp
-git clone git@github.com:scala/scala-tool-support.git
-cd scala-tool-support/tool-support/vim
-cp ftdetect indent plugin syntax /root/.vim/
-rm -rf /tmp/scala-tool-support
 
 #
 # neocomplete
