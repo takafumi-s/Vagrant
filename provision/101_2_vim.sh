@@ -16,8 +16,11 @@ git clone git@github.com:scala/scala-tool-support.git /root/.vim/git/scala-tool-
 cd /root/.vim
 ln -s ../git/scala-tool-support/tool-support/vim/ftdetect/scala.vim /root/.vim/ftdetect/
 ln -s ../git/scala-tool-support/tool-support/vim/indent/scala.vim   /root/.vim/indent/
-ln -s ../git/scala-tool-support/tool-support/vim/plugin/scala.vim   /root/.vim/plugin/
+ln -s ../git/scala-tool-support/tool-support/vim/plugin/31-create-scala.vim   /root/.vim/plugin/
 ln -s ../git/scala-tool-support/tool-support/vim/syntax/scala.vim   /root/.vim/syntax/
+
+# dict
+wget https://raw.githubusercontent.com/tyru/dotfiles/master/dotfiles/.vim/dict/scala.dict -O /root/.vim/dict/scala.dict
 
 #
 # root

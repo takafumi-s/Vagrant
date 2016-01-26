@@ -24,7 +24,7 @@ make install
 #
 # setting
 #
-mkdir -p /root/.vim/{colors,ftdetect,indent,plugin,syntax,git}
+mkdir -p /root/.vim/{colors,dict,ftdetect,indent,plugin,syntax,git}
 cp ${GIT_DIR}/vim/.vimrc /root/.vimrc
 
 #

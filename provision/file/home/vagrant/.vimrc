@@ -103,7 +103,7 @@ NeoBundle 'violetyk/neocomplete-php.vim'
     let g:neocomplete_php_locale = 'ja'
 
 " [Scala] ====
-"NeoBundle 'derekwyatt/vim-scala'
+NeoBundle 'derekwyatt/vim-scala'
 " ==== [Scala]
 
 " コードをvim上で即,実行する
