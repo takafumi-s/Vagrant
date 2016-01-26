@@ -37,6 +37,7 @@ cd /tmp
 git clone git@github.com:scala/scala-tool-support.git
 cd scala-tool-support/tool-support/vim
 cp ftdetect indent plugin syntax /root/.vim/
+rm -rf /tmp/scala-tool-support
 
 #
 # neocomplete
