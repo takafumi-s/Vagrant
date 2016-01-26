@@ -31,6 +31,14 @@ wget "https://raw.githubusercontent.com/vim-scripts/Wombat/master/colors/wombat.
 wget "https://raw.githubusercontent.com/w0ng/vim-hybrid/master/colors/hybrid.vim" -O /root/.vim/colors/hybrid.vim
 
 #
+# scala syntax
+#
+cd /tmp
+git clone git@github.com:scala/scala-tool-support.git
+cd scala-tool-support/tool-support/vim
+cp ftdetect indent plugin syntax /root/.vim/
+
+#
 # neocomplete
 #
 mkdir -p /root/.vim/bundle/neobundle

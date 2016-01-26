@@ -1,4 +1,5 @@
-colorscheme wombat
+set background=dark
+colorscheme hybrid
 syntax on
 
 " PATH
@@ -55,13 +56,14 @@ NeoBundle 'Shougo/neobundle.vim'
 
 NeoBundle 'Shougo/neocomplete.vim'
 
-NeoBundle 'Shougo/unite.vim'
-
 NeoBundle 'Shougo/vimproc.vim' , {
   \ 'build' : {
     \ 'unix' : 'make -f make_unix.mak',
   \ },
 \ }
+
+NeoBundle 'Shougo/unite.vim'
+NeoBundle 'Shougo/unite-outline'
 
 NeoBundle 'scrooloose/nerdtree'
 
@@ -101,7 +103,7 @@ NeoBundle 'violetyk/neocomplete-php.vim'
     let g:neocomplete_php_locale = 'ja'
 
 " [Scala] ====
-NeoBundle 'derekwyatt/vim-scala'
+"NeoBundle 'derekwyatt/vim-scala'
 " ==== [Scala]
 
 " コードをvim上で即,実行する
@@ -129,6 +131,14 @@ NeoBundle 'jelera/vim-javascript-syntax'
 " ==== [Node.js]
 call neobundle#end()
 " ------------------------------------- neobundle
+
+" Define dictionary.
+let g:neocomplete#sources#dictionary#dictionaries = {
+    \ 'default' : '',
+    \ 'perl'  : $HOME . '/.vim/dict/perl.dict',
+    \ 'php'   : $HOME . '/.vim/dict/php.dict',
+    \ 'scala' : $HOME . '/.vim/dict/scala.dict'
+\ }
 
 " filetype plugin indent on
 " filetype indent on
