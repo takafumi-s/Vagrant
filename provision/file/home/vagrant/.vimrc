@@ -54,6 +54,11 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 
 NeoBundle 'Shougo/neobundle.vim'
 
+" colorscheme ----------------------------------
+NeoBundle 'vim-scripts/Wombat'
+NeoBundle 'w0ng/vim-hybrid'
+" ---------------------------------- colorscheme 
+
 NeoBundle 'Shougo/neocomplete.vim'
 
 NeoBundle 'Shougo/vimproc.vim' , {
@@ -137,7 +142,7 @@ let g:neocomplete#sources#dictionary#dictionaries = {
     \ 'default' : '',
     \ 'perl'  : $HOME . '/.vim/dict/perl.dict',
     \ 'php'   : $HOME . '/.vim/dict/php.dict',
-    \ 'scala' : $HOME . '/.vim/dict/scala.dict'
+    \ 'scala' : $HOME . '/.vim/dict/scala.dict',
 \ }
 
 " filetype plugin indent on
