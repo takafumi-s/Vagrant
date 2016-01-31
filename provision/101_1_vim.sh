@@ -32,5 +32,5 @@ cp ${GIT_DIR}/vim/.vimrc /root/.vimrc
 #
 mkdir -p /root/.vim/bundle/neobundle
 git clone https://github.com/Shougo/neobundle.vim /root/.vim/bundle/neobundle.vim
-/usr/local/bin/vim -i NONE -c "try | NeoBundleUpdate! | finally | q! | endtry" -e; echo
+yes "" | /usr/local/bin/vim -i NONE -c "try | NeoBundleUpdate! | finally | q! | endtry" -e; echo
 # /usr/local/bin/vim +":NeoBundleInstall!" +:q! ; echo;
