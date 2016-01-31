@@ -9,6 +9,7 @@ fi
 # export SYSTEMD_PAGER=
 
 # User specific aliases and functions
+
 alias cp='cp -i'
 alias mv='mv -i'
 alias rm='rm -i'
