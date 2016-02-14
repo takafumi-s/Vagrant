@@ -13,3 +13,9 @@ fi
 alias cp='cp -i'
 alias mv='mv -i'
 alias rm='rm -i'
+
+# Haskell - Stack
+alias ghc="stack ghc --"
+alias ghci="stack ghci"
+alias runghc="stack runghc --"
+alias runhaskell="stack runghc --"
