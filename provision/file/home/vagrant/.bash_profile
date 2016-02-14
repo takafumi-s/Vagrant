@@ -8,6 +8,7 @@ fi
 # User specific environment and startup programs
 
 PATH=$PATH:$HOME/.local/bin:$HOME/bin
+PATH=$PATH:/usr/src/tarball/node-v5.3.0-linux-x64/bin
 
 export PATH
 
