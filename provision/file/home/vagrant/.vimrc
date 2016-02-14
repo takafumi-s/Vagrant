@@ -1,5 +1,5 @@
 set background=dark
-colorscheme hybrid
+colorscheme wombat 
 syntax on
 
 " PATH
@@ -134,6 +134,13 @@ NeoBundle 'ujihisa/ref-hoogle'
 " syntax
 NeoBundle 'jelera/vim-javascript-syntax'
 " ==== [Node.js]
+
+" [Markdown] ====
+NeoBundle 'plasticboy/vim-markdown'
+" NeoBundle 'kannokanno/previm'
+" NeoBundle 'tyru/open-browser.vim'
+" ==== [Markdown]
+
 call neobundle#end()
 " ------------------------------------- neobundle
 
