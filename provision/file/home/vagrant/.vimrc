@@ -1,5 +1,5 @@
 set background=dark
-colorscheme wombat 
+colorscheme wombat
 syntax on
 
 " PATH
@@ -57,7 +57,7 @@ NeoBundle 'Shougo/neobundle.vim'
 " colorscheme ----------------------------------
 NeoBundle 'vim-scripts/Wombat'
 NeoBundle 'w0ng/vim-hybrid'
-" ---------------------------------- colorscheme 
+" ---------------------------------- colorscheme
 
 NeoBundle 'Shougo/neocomplete.vim'
 
