@@ -1,7 +1,6 @@
 #
 # install module
 #
-yum install -y mercurial
 yum install -y ncurses-devel
 yum install -y lua lua-devel
 
@@ -9,7 +8,7 @@ yum install -y lua lua-devel
 # make install
 #
 cd /usr/local/src
-hg clone https://vim.googlecode.com/hg/ vim
+git clone git@github.com:vim/vim.git
 cd vim
 ./configure \
   --with-features=huge \
